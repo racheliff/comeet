@@ -1,14 +1,14 @@
 $app-color: rgba(49, 109, 160, 0.47);
+$app-second-color: rgba(224, 158, 36, 0.62);
 /*--list--*/
 @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
 h1, h3{
   text-align: center;
-  color: rgba(224, 158, 36, 0.62);
+  color: $app-second-color;
 }
 ol {
   counter-reset: li;
   list-style: none;
-  *list-style: decimal; /* Keep using default numbering for IE6/7 */
   font: 15px 'Merriweather Sans', 'lucida sans', sans-serif;
   padding: 0;
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
@@ -22,7 +22,6 @@ ol ol {
   position: relative;
   display: block;
   padding: .4em .4em .4em 2em;
-  *padding: .4em;
   margin: .5em 0;
   background: #ddd;
   color: #444;
@@ -64,6 +63,7 @@ ol ol {
 .gender{
   margin:25px ;
   text-align: center;
+  color: $app-second-color;
 }
 .inline{
   display: inline-block;
