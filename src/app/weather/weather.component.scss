@@ -1,0 +1,125 @@
+$app-color: rgba(49, 109, 160, 0.47);
+/*--list--*/
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+h1, h3{
+  text-align: center;
+  color: rgba(224, 158, 36, 0.62);
+}
+ol {
+  counter-reset: li;
+  list-style: none;
+  *list-style: decimal; /* Keep using default numbering for IE6/7 */
+  font: 15px 'Merriweather Sans', 'lucida sans', sans-serif;
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  width: 500px;
+  margin: 0 auto;
+}
+ol ol {
+  margin-left: 2em;
+}
+.rounded-list a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  *padding: .4em;
+  margin: .5em 0;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: all .5s ease-out;
+}
+.rounded-list a:hover{
+  background: #fafafa;
+}
+
+.rounded-list a:hover:before{
+  transform: rotate(360deg);
+  -webkit-transform:rotate(360deg);
+}
+
+.rounded-list a:before{
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: $app-color;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
+.inline-list a:before{
+  content: '*';
+  line-height: 2.4em;
+}
+/*--radio button--*/
+.gender{
+  margin:25px ;
+  text-align: center;
+}
+.inline{
+  display: inline-block;
+}
+.inline + .inline{
+  margin-left:10px;
+}
+.radio{
+  color:#999;
+  font-size:15px;
+  position:relative;
+}
+.radio span{
+  position:relative;
+  padding-left:20px;
+}
+.radio span:after{
+  content:'';
+  width:15px;
+  height:15px;
+  border:3px solid;
+  position:absolute;
+  left:0;
+  top:1px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+.radio input[type="radio"]{
+  cursor: pointer;
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+.radio input[type="radio"]:checked + span{
+  color: $app-color;
+}
+.radio input[type="radio"]:checked + span:before{
+  content:'';
+  width:5px;
+  height:5px;
+  position:absolute;
+  background: $app-color;
+  left:5px;
+  top:6px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+}

@@ -1,0 +1,11 @@
+{
+  "appId": "f783c23f7e6f01ef20ee7e201a3dd28b",
+  "box_coordinates": "-180,-30,180,45,30",
+  "url": "http://api.openweathermap.org/data/2.5/box/city",
+  "units": "metric",
+  "sign_units": "℃",
+  "required_temperature": 21,
+  "required_humidity": 50,
+  "approximation_result_count": 5,
+  "hours_refreshing_data": 2
+}
