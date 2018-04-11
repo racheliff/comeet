@@ -1,15 +1,10 @@
-$dot-size: 1em;
+$dot-size: 2vh;
 $duration: 3000ms;
 $container-size: $dot-size * 10;
 $dot-map: ( a:0, b:1, c:2, d:3, e:4, f:5, g:6, h:7);
 
 .wrapper {
-  width: 100%;
-  height: 90vh;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-
+  margin-top:20vh;
 }
 
 .flex-center {
@@ -29,21 +24,21 @@ $dot-map: ( a:0, b:1, c:2, d:3, e:4, f:5, g:6, h:7);
     width: $container-size;
     height: $container-size;
   }
-.dot {
-  background: #1f0a8b;
-  content: "";
-  border-radius: $dot-size * 0.5;
-  margin-top: $dot-size * -0.5;
-  margin-left: auto;
-  margin-right: auto;
-  width: $dot-size;
-  height: $dot-size;
+  .dot {
+    background: #1f0a8b;
+    content: "";
+    border-radius: $dot-size * 0.5;
+    margin-top: $dot-size * -0.5;
+    margin-left: auto;
+    margin-right: auto;
+    width: $dot-size;
+    height: $dot-size;
 
-  animation-name: bounce;
-  animation-duration: $duration;
-  animation-iteration-count: infinite;
-  transition-timing-function:  cubic-bezier(0, 0.99, 0, 0.1);
-}
+    animation-name: bounce;
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+    transition-timing-function:  cubic-bezier(0, 0.99, 0, 0.1);
+  }
 }
 
 .container-dot {

@@ -33,7 +33,7 @@ export class WeatherComponent implements OnInit {
       this.signUnits = this.weatherService.config.sign_units;
       this.weatherService.getStatesWeatherList()
            .subscribe( () => {
-            this.getWeatherWinnersList();
+          this.getWeatherWinnersList();
         });
     });
   }
