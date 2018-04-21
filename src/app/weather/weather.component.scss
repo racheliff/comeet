@@ -19,8 +19,9 @@ ol {
 }
 ol ol {
   color: #999;
-  margin-left: 2em;
+  margin-left: 5%;
   font-weight: normal;
+  width: 100%;
 }
 .rounded-list a {
   position: relative;
@@ -34,7 +35,8 @@ ol ol {
   transition: all .5s ease-out;
 }
 .rounded-list a:hover{
-  background: #fafafa;
+  background: #a9a9a9;
+  /*color: whitesmoke;*/
 }
 
 .rounded-list a:hover:before{
